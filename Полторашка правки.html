@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link id=body_color rel="stylesheet" href="style.css" type="text/css"/>
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+  <!-- <title>Генератор писем</title> -->
+   <title>Полторашка</title>
+ </head ><script src='script.js'></script>
+ <body id='gener_body'>
+   <button type=button  id='change_color_button'></button>
+   <div id='main_container' class='main_container'>
+      <div id='sub_main_container_light'class='sub_main_container_light' spellcheck id='sub_main_container'><form>
+        <div width='100%'><h2 style='margin: 0; padding-bottom: 22px; text-align: center;'>Генератор писем "Полторашка"</h2> </div>
+		<div class="input_container" >
+		
+            <div class="input_line">
+            
+               <div class="left_td">Theme  
+                  <sup >*</sup>
+			</div>
+				<select  accesskey id="theme_pick">
+					<option></option>
+					<option >1</option>
+					<option >2</option>
+					<option >3</option>
+					<option >4</option>
+					<option >5</option>
+					<option >6</option>
+					<option >7</option>
+					<option >8</option>
+					<option >9</option>
+					<option >10</option>
+				  
+				</select> 
+			</div>
+            
+            <!-- <button type="button" id="autoreciever" name="autoreciever" >автозаполнить</button><p></p> -->
+            <div class="input_line">
+            
+               <div class="left_td">Mailreciever:
+                  <sup >*</sup> 
+               </div>
+				<div class="right_td"> 
+					<select  accesskey id="mailreciever">
+						<option></option>
+						<option value='1'>1</option>
+						<option value='2'>2</option>
+						<option value='3'>3</option>
+						<option value='4'>4</option>
+						<option value='5'>5</option>
+						<option value='6'>6</option>
+						<option value='7'>7</option>
+						<option value='8'>8</option>						
+						
+					</select> 
+				</div>
+            
+            </div>
+            
+            <div class="input_line" id='cathlyn' style="display: none;">
+               <div class="right_td" style=''> 
+					chekbox 1
+               </div>
+               <div class="left_td " style='' >
+                  <input type=checkbox id="call_again" style='float: right' ></input>
+               </div>
+            </div>
+			<div class="input_line" id='EmailCheck' style="display: none;">
+               <div class="left_td" bgcolor='pink' >
+					chekbox2
+                  <input type=checkbox id="EmailCheckBox" style='float: right'></input>
+               </div>
+			   <div class="right_td" style='' > 
+                  
+               </div>
+            </div>
+
+            <div class="input_line">
+            
+               <div class="left_td">  City: 
+                  <sup  id='jayce'>*</sup>
+               </div>
+               <div class="right_td">
+                  <select  accesskey  id='City'>
+                     <option></option>
+					 <option>city1</option>
+					 <option>city2</option>
+					 <option>city3</option>
+                  </select> 
+               </div>   
+            
+            </div>
+            <div class="input_line">
+            
+               <div class="left_td">input1
+                  <sup >*</sup>
+               </div>
+               <div class="right_td">
+                  <input  type=text id="Customer_Name" ></input>
+               </div>
+            
+            </div>
+            <div class="input_line">
+            
+               <div class="left_td">input2
+                  <sup >*</sup>
+               </div>
+               <div class="right_td">
+                  <input  type=text id="customer_address"></input>
+               </div>
+            
+            </div>
+            <div class="input_line">
+            
+               <div class="left_td">input3
+                  <sup  id='vi'>*</sup>
+               </div>
+               <div class="right_td">
+                  <input type=tel   id="ticket_number"></input>
+               </div>
+            
+            </div>
+            <div class="input_line">
+            
+               <div class="left_td">input4
+                  <sup id='victor'>*</sup>
+               </div>
+               <div class="right_td">
+                  <input   type=text id='other_system'></input>
+               </div>
+            </div>
+            <div class="input_line">
+            
+               <div class="left_td">input5
+                  <sup >*</sup>
+               </div>
+               <div class="right_td">
+                  <input   type=tel id="telephone_number"></input>
+               </div>
+            
+            </div>
+            <div class="input_line">
+            
+               <div class="left_td">input6</div>
+               <div class="right_td">
+                  <input   type=text id='ID_c'></input>
+               </div>
+			   </div>
+            <div class="buttons_for_letter">
+               <p><button type="button" id="to_generate">Generate</button> 
+                  <button  id="reset_button" type=reset accesskey='0'title='Internet Explorer: Alt + 0
+Chrome: Alt + 0 
+Opera: Shift + Esc + 0 
+Safari: Alt + 0 
+Firefox: Shift + Alt + 0'>Очистить</button></p>
+            </div>
+            </div>
+            <div class="completed_letter_light" id="completed_letter">
+               <br><div class=textarea id="recievers_output" contenteditable='false' ><span style=' color: #aaaaaa;'>Resievers:</span></div> 
+               <div class=textarea_button><button id="recievers_output_button" type="button" style='position: fixed;'accesskey='1' 
+			   title='Internet Explorer: Alt + 1
+Chrome: Alt + 1
+Opera: Shift + Esc + 1
+Safari: Alt + 1
+Firefox: Shift + Alt + 1'></button></div> 
+               <!-- <br><textarea  id="recievers_copy" name="recievers_copy" rows="2" cols="120" placeholder="В Копию:"></textarea> <button id="recievers_copy_button"  type="button" style="position: absolute; top: 2" onclick="copy_text('recievers_copy')">Скопировать</button> -->
+               <br><div class=textarea contenteditable='false' id="theme_output" rows="2" cols="100" ><span style=' color: #aaaaaa;'> Theme:</span></div> 
+               <div class=textarea_button><button id="theme_output_button" type="button"  style='position: fixed;'accesskey='2'title='Internet Explorer: Alt + 2
+Chrome: Alt + 2
+Opera: Shift + Esc + 2
+Safari: Alt + 2
+Firefox: Shift + Alt + 2'></button></div> 
+               <div class=textarea contenteditable='false' id='jinx' style="height:150px; overflow-y:scroll;"><span style=' color: #aaaaaa;'>text:</span></div> 
+                 <div class=textarea_button> <button id="jinx_button" type="button"  style='position: fixed;'accesskey='3'title='Internet Explorer: Alt + 3
+Chrome: Alt + 3
+Opera: Shift + Esc + 3
+Safari: Alt + 3
+Firefox: Shift + Alt + 3'></button></p></div>
+               <!-- <p><button type="button" name="variable_out" onclick="variable_out_func()">вывести</button></p> --></div>
+         </div>
+ </body>
+ <footer>
+   <script src="script.js"></script>
+ <span style='color:#dddddd;'> ver 1.10</span>
+ </footer>
+</html> 

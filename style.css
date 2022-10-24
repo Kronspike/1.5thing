@@ -1,0 +1,171 @@
+.main_container{
+    position: relative;
+}
+.sub_main_container_light{
+    position: absolute;
+    margin-top: 23%;
+    left: 50%;
+	/* margin-top:5%; */
+	/* margin-left: ; */
+	/* margin-right: 50%; */
+    -webkit-transform: translate(-50%, -50%); 
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #d1bc8a;
+    color: black;
+    border-radius: 10px;
+    padding: 2%;
+    width: 800px;
+}
+.input_conatiner{
+    background-color: yellow; 
+    width: 350px;
+    /* height: 350px; */
+}
+.input_line{
+    display: block;
+    width: 100%;
+	/*margin: 3%;*/
+	height: 30px;
+}
+.left_td{
+    display: inline;
+    width: 25%;
+    float: left;
+}
+.right_td{
+    display: inline;
+    width: 75%;
+    float: right;
+}
+.right_td input{
+    display: inline;
+    width: 75%;
+}
+
+#call_again input{
+	float: right;
+	width: 2%;
+}
+#EmailCheckBox input{
+	float: right;
+    width: 2%;
+	margin-right: 15px;
+}
+.button_for_letter{
+    display: block;
+}
+.completed_letter{
+    display: block;
+}
+footer{
+    margin: 6px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+#change_color_button{
+    position: fixed;
+    right: 0;
+    top: 0;
+    /* margin-top: 10px; */
+    /* margin-right: 10px; */
+    width: 40px;
+	height: 40px;
+    /* margin:10% ; */
+    border: none;
+    background: url(moon.png) center no-repeat;
+	
+}
+
+sup{
+    color: red;
+	text-shadow: 1px 1px #000000 
+}
+body
+{
+    background-color: #FFFFF0;
+    color: #dddddd;
+    font-family: Open Sans;
+}
+input 
+{
+    border: 3px double;
+    border-radius: 7px;
+    border-color:#400000;
+    color: #421212;
+    background: #dddddd;
+    font-size: medium;
+    font-stretch: expanded;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	margin:0.75% ;
+}
+button{
+    appearance: none;
+    color: #fff;
+    border: 3px double;
+    border-radius: 7px;
+    background: #600000;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	position: bottom;
+}
+button[disabled]{
+    appearance: none;
+    color: #aaa;
+    border: 3px groove;
+    background: #600000;
+    cursor: not-allowed;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+h2{
+    font-family: Open Sans; 
+	text-shadow: 1px 1px #dddddd
+}
+
+.completed_letter_light button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(copy_icon_black.png) center no-repeat;
+}
+.textarea{
+    resize: vertical;
+	background-color: #ffffff;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	background: #ffffff;
+	width: 700px;
+	float: left;
+	margin-top: 10px;
+	border-color: #000000;
+	border: 1px dotted;
+}
+.textarea_button{
+	width: 90px;
+	border-radius: 10px;
+	float: right;
+	margin-top: 10px;
+}
+.notvalid{
+	border: solid 3px red;
+	border-radius: 5px;
+}
