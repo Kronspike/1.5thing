@@ -1,41 +1,39 @@
 window.onload = function() {
-    document.getElementById('change_color_button').onclick = function (){
+	document.getElementById('change_color_button').onclick = function (){
 		if (document.getElementById('body_color').getAttribute('href') == 'style.css') {
 			document.getElementById('body_color').setAttribute('href','style black.css');
-	} else {
-		document.getElementById('body_color').setAttribute('href','style.css');
-	}
+			} 
+		else {
+			document.getElementById('body_color').setAttribute('href','style.css');
+		}
 	}
     document.getElementById("reset_button").onclick = function clear(){
-        let inputs = document.getElementsByTagName("input")
-        let selects = document.getElementsByTagName("select")
-        let textareas = document.getElementsByTagName("input")
-        for (var i = 0; i < inputs.length; i++){
-            if (inputs[i].type == "checkbox"){
-                inputs[i].checked = false
-                document.getElementById('cathlyn').style.display='none'
-            }
-		
-            inputs[i].value = ''
-        }
-	    document.getElementById('jinx').innerHTML = "<span style=' color: #aaaaaa;'>text:</span>";
-	    document.getElementById('theme_output').innerHTML = "<span style=' color: #aaaaaa;'>Theme:</span>";
-	    document.getElementById('recievers_output').innerHTML = "<span style=' color: #aaaaaa;'>Resievers:</span>";
-		for (var i = 0; i < document.getElementsByTagName("sup").length; i++){
-					document.getElementsByTagName("sup")[i].style.display='inline';
-		}
-        for (var i = 0; i < selects.length; i++){
+	    let inputs = document.getElementsByTagName("input")
+	    let selects = document.getElementsByTagName("select")
+	    let textareas = document.getElementsByTagName("input")
+	    for (var i = 0; i < inputs.length; i++){
+		    if (inputs[i].type == "checkbox"){
+			    inputs[i].checked = false
+			    document.getElementById('cathlyn').style.display='none'
+			    }
+		    inputs[i].value = ''
+		    }
+	    for (var i = 0; i < document.getElementsByTagName("sup").length; i++){
+		    document.getElementsByTagName("sup")[i].style.display='inline';
+	    }
+    	for (var i = 0; i < selects.length; i++){
             selects[i].value = ''
         }
         for (var i = 0; i < textareas.length; i++){
             textareas[i].value = ''
         }
-		document.getElementById('jinx').ID_cerHTML = "<span style=' color: #aaaaaa;'>Body:</span>";
-		document.getElementById('theme_output').ID_cerHTML = "<span style=' color: #aaaaaa;'>Theme:</span>";
-		document.getElementById('recievers_output').ID_cerHTML = "<span style=' color: #aaaaaa;'>Reciever:</span>";
+		document.getElementById('jinx').innerHTML = "<span style=' color: #aaaaaa;'>Text:</span>";
+		document.getElementById('theme_output').innerHTML = "<span style=' color: #aaaaaa;'>Theme:</span>";
+		document.getElementById('recievers_output').innerHTML = "<span style=' color: #aaaaaa;'>Reciever:</span>";
 		document.getElementById('recievers_output').setAttribute('contenteditable',false);
 		document.getElementById('theme_output').setAttribute('contenteditable',false);
 		document.getElementById('jinx').setAttribute('contenteditable',false);
+    }
     ticket_valid=true; 
 	//theme_valid=true; 
 	tel_valid=true; 
