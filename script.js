@@ -26,14 +26,13 @@ window.onload = function() {
         }
         for (var i = 0; i < textareas.length; i++){
             textareas[i].value = ''
-        }
+	}
 		document.getElementById('jinx').innerHTML = "<span style=' color: #aaaaaa;'>Text:</span>";
 		document.getElementById('theme_output').innerHTML = "<span style=' color: #aaaaaa;'>Theme:</span>";
 		document.getElementById('recievers_output').innerHTML = "<span style=' color: #aaaaaa;'>Reciever:</span>";
 		document.getElementById('recievers_output').setAttribute('contenteditable',false);
 		document.getElementById('theme_output').setAttribute('contenteditable',false);
 		document.getElementById('jinx').setAttribute('contenteditable',false);
-    }
     ticket_valid=true; 
 	//theme_valid=true; 
 	tel_valid=true; 
