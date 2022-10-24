@@ -54,7 +54,7 @@ window.onload = function() {
 	document.getElementById('victor').style.display='inline';
     }
 	document.getElementById("jinx_button").onclick = function ()  {
-	//	document.getElementById('jinx').select();
+		//	document.getElementById('jinx').select();
 		var range = document.createRange();
 		range.selectNode(document.getElementById("jinx"));
 		window.getSelection().removeAllRanges();
@@ -102,13 +102,23 @@ window.onload = function() {
 				document.getElementsByTagName("sup")[i].style.display='none';
 			}
 		}
-			else {
-				for (var i = 0; i < document.getElementsByTagName("sup").length; i++){
-					document.getElementsByTagName("sup")[i].style.display='inline';
-				}
+		else {
+			for (var i = 0; i < document.getElementsByTagName("sup").length; i++){
+				document.getElementsByTagName("sup")[i].style.display='inline';
 			}
-		if (document.getElementById('theme_pick').options[8].selected) document.getElementById('EmailCheck').style.display='block'; else {document.getElementById('EmailCheck').style.display='none'; document.getElementById('EmailCheckBox').checked=false}
-		if(((document.getElementById('theme_pick').options[3].selected) || (document.getElementById('theme_pick').options[2].selected) || document.getElementById('theme_pick').options[9].selected)) {document.getElementById('victor').style.display='none';document.getElementById('vi').style.display='none'; }else	{ document.getElementById('vi').style.display='inline';  document.getElementById('victor').style.display='inline';}
+		}
+		if (document.getElementById('theme_pick').options[8].selected) document.getElementById('EmailCheck').style.display='block'; else {
+			document.getElementById('EmailCheck').style.display='none';
+			document.getElementById('EmailCheckBox').checked=false
+		}
+		if(((document.getElementById('theme_pick').options[3].selected) || (document.getElementById('theme_pick').options[2].selected) || document.getElementById('theme_pick').options[9].selected)) {
+			document.getElementById('victor').style.display='none';
+			document.getElementById('vi').style.display='none'; 
+		}
+		else	{
+			document.getElementById('vi').style.display='inline';
+			document.getElementById('victor').style.display='inline';
+		}
 		if(document.getElementById('theme_pick').options[1].selected || document.getElementById('theme_pick').options[9].selected) {document.getElementById('jayce').style.display='none'}else { document.getElementById('jayce').style.display='inline';}//вырубаем звёздочки там, где они не нужны
 		document.getElementById('mailreciever').options[1].hidden=(!(document.getElementById('theme_pick').options[5].selected));
 //document.getElementById('jinx').value=document.getElementById('theme_pick').options[5].selected;
