@@ -13,10 +13,14 @@ window.onload = function() {
         for (var i = 0; i < inputs.length; i++){
             if (inputs[i].type == "checkbox"){
                 inputs[i].checked = false
-                document.getElementById('cathlyn').style.display='none';
+                document.getElementById('cathlyn').style.display='none'
             }
+		
             inputs[i].value = ''
         }
+	    document.getElementById('jinx').innerHTML = "<span style=' color: #aaaaaa;'>text:</span>";
+	    document.getElementById('theme_output').innerHTML = "<span style=' color: #aaaaaa;'>Theme:</span>";
+	    document.getElementById('recievers_output').innerHTML = "<span style=' color: #aaaaaa;'>Resievers:</span>";
 		for (var i = 0; i < document.getElementsByTagName("sup").length; i++){
 					document.getElementsByTagName("sup")[i].style.display='inline';
 		}
